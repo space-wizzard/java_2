@@ -1,7 +1,5 @@
 package drill;
 
-
-
 public class Healing {
 
 	public static void main(String[] args) {
