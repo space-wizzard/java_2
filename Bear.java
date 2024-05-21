@@ -3,7 +3,7 @@ package inheritance;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
-
+// 곰 객체 (술래)
 public class Bear extends GameObject {
 	public Bear(int startX, int startY, int distance) {
 		super(startX, startY, distance);

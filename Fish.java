@@ -3,7 +3,7 @@ package inheritance;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
-
+// 물고기 객체(짝수번째에 자리 옮김)
 public class Fish extends GameObject {
 	private int idx=0;
 	public Fish(int startX, int startY, int distance) {
@@ -12,7 +12,7 @@ public class Fish extends GameObject {
 	@Override
 	protected void move(String key) {
 		if(idx%2==1) {
-			x+=distance;
+			//x+=distance;
 		}
 		else {
 			y+=distance;

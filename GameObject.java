@@ -3,7 +3,7 @@ package inheritance;
 import java.awt.Image;
 
 import javax.swing.JCheckBox;
-
+// 곰과 물고기 객체에 필요한 메서드와 변수 지정
 public abstract class GameObject {
 	protected int distance;
 	protected int x,y;

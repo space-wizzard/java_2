@@ -1,30 +1,10 @@
 package inheritance;
 
-import java.awt.Graphics;
-
 import javax.swing.JPanel;
 
-public class ConsoleGameRenderer implements GameRenderer {
-	Mycomponent m = new Mycomponent();
-	class Mycomponent extends JPanel{
-		public void paintComponent(Graphics g) {
-			super.paintComponents(g);
-			for (int i=0;i<end_x;i++) {
-	            for (int j=0;j<end_y;j++) {
-	            	GameObject obj=gamePane[i][j];
-	                if (obj != null) {
-	                	 g.drawImage(obj.getShape(), obj.x * 20, obj.y * 20, 20, 20, this);
-	                    
-	                } else {
-	                	g.drawString("-", i * 20, (j + 1) * 20);
-	                }	             
-	            }
-	           
-	        }
-			repaint();
-			revalidate();
-		}
-	}
+public class ConsoleGameRenderer extends JPanel implements GameRenderer {
+		
+	
 	@Override
 	public void UpdateGamePane(Bear bear,Fish fish) {
 		
